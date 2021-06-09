@@ -11,6 +11,16 @@ class Number extends Model
     use HasFactory;
 
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'saving_id',
+        'date_payment',
+    ];
+
+    /**
      * Get the saving that owns the number.
      */
     public function saving()

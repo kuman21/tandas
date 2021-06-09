@@ -11,6 +11,20 @@ class Saving extends Model
     use HasFactory;
 
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'user_id',
+        'numbers',
+        'periodicity',
+        'amount',
+        'shared',
+        'start',
+    ];
+
+    /**
      * Get the user that owns the saving.
      */
     public function user()
