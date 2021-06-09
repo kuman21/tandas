@@ -21,8 +21,16 @@ class SavingFactory extends Factory
      */
     public function definition()
     {
+        $periodicity = ['7', '15', '30'];
+
         return [
-            //
+            'user_id' => rand(1, 2),
+            'numbers' => rand(10, 15),
+            'periodicity' => $periodicity[rand(0, 2)],
+            'amount' => $this->$faker->randomDigit,
+            'shared' => rand(0, 1),
+            'date' => $this->faker->date,
+            'active' => rand(0, 1)
         ];
     }
 }
