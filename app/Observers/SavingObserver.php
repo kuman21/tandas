@@ -3,7 +3,7 @@
 namespace App\Observers;
 
 use App\Models\{Saving,Number};
-use App\Http\Helpers\AssignDate;
+use App\Helpers\AssignDate;
 
 class SavingObserver
 {
