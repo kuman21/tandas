@@ -17,7 +17,7 @@ class CreateNumbersTable extends Migration
             $table->id();
             $table->foreignId('saving_id')->constrained()->onDelete('cascade');
             $table->date('date_payment');
-            $table->intenger('shared_numbers')->default(0);
+            $table->integer('shared_numbers')->default(0);
             $table->boolean('pay_out')->default(false);
             $table->timestamps();
         });
